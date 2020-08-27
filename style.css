@@ -1,0 +1,348 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    margin:0;
+    padding:0;
+}
+header img{
+    width: 40%;
+    margin:10px;
+}
+header nav{
+    margin:0 0 0 4%;
+    width: 60%;
+}
+header nav ul{
+    margin:0;
+    padding:0;
+}
+header nav ul li{
+    display:inline-block;
+    padding:20px 0 0;
+}
+header nav ul li a{
+    text-decoration:none;
+    font-size: 0.7rem;
+}
+
+
+/* Main */
+main {
+    margin:0;
+    padding:0;
+}
+
+
+/* Section1 */
+#section-1 {
+    background:rgb(70, 17, 119);
+    color:white;
+    margin:0;
+    padding:0 20px;
+    text-align: center;
+}
+#section-1 h2{
+    font-size:1.0rem;
+}
+#section-1 p{
+    font-size:0.5rem;
+}
+#section-1 img{
+    margin:0 auto;
+    padding:10px 0;
+    display:block;
+    height: 50px;
+}
+#section-1 button{
+    background:rgb(13, 185, 162);
+    padding:5px 10px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    margin:10px 0;
+    outline:none;
+    font-size:0.5rem;
+}
+
+
+
+/* Section 2 */
+#section-2 {
+    margin:0;
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+}
+#section-2 div img{
+    margin:0 auto;
+    display:block;
+}
+#section-2 div {
+    text-align:center;
+    margin:3px;
+}
+#section-2 div h3{
+    text-transform:uppercase;
+    color:rgb(70, 17, 119);
+    font-size:1.0rem;
+}
+#section-2 div p{
+    font-size:0.5rem;
+}
+
+
+
+/* Section 3 */
+#section-3 {
+    padding:20px;
+    background:rgb(228, 226, 226);
+}
+#section-3 div h3{
+    color:rgb(70, 17, 119);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size:1.0rem;
+}
+#section-3 div button {
+    background:rgb(13, 185, 162);
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:0.5rem;
+}
+#section-3 div p{
+    font-size:0.5rem;
+}
+
+
+
+/* Footer */
+footer {
+    background:rgb(32, 32, 54);
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+}
+footer div img{
+    height: 20px;
+}
+footer div:first-child {
+    background:rgb(51, 51, 109);
+    width:100%;
+    margin:0;
+    padding:0;
+}
+footer div:last-child {
+    padding:20px;
+    font-size:0.5rem;
+}
+
+
+
+
+@media (min-width:999px){
+
+    /* Header */
+   header img{
+        width: 20%;
+        margin:0 0 0 10%;
+    }
+    header nav{
+        margin: 0 2% 0 20%;
+    }
+    header nav ul li{
+        padding:30px 0;
+        margin:0 1%;
+    }
+    header nav ul li a{
+        font-size:18px;
+        padding:20px;
+        margin:auto;
+    }
+    header nav ul li:hover a {
+        background:rgb(183, 177, 189);
+
+    }
+
+
+    /* section-1 */
+    #section-1 {
+        background-image: url(./imagens/bg_topo_1600x1374.jpg);
+        height:900px;
+        background-position-x: center;
+        margin:0;
+    }
+    #section-1 h2{
+        font-size:30px;
+    }
+    #section-1 p{
+        font-size:20px;
+    }
+    #section-1 img{
+        height: 150px;
+    }
+    #section-1 button{
+        padding:10px 25px;
+        font-size:20px;
+    }
+    #section-1 button:hover {
+        cursor:pointer;
+        opacity: 0.8;
+    }
+    #section-1 div {
+        position: absolute;
+        margin:0 0 0;
+        bottom: 15%;
+        left:15%;
+        right:15%;
+    }
+
+    /* section-2 */
+    #section-2{
+        display:flex;
+        padding:50px 20%;
+    }
+    #section-2 div {
+        text-align:center;
+        margin:5 px;
+    }
+    #section-2 div h3{
+        text-transform:uppercase;
+        color:rgb(70, 17, 119);
+        font-size:25px;
+    }
+    #section-2 div p{
+        font-size:15px;
+    }
+
+    /* section-3 */
+    #section-3 {
+        padding:50px 20%;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-gap: 10px;
+    }
+    #section-3 div h3{
+        font-size:30px;
+    }
+    #section-3 div button {
+        padding:10px 25px;
+        font-size:20px;
+    }
+    #section-3 div button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    #section-3 div p{
+        font-size:15px;
+    }
+
+    /* Footer */
+    footer div img{
+        height: 30px;
+    }
+    footer div:last-child {
+        padding:20px;
+        font-size:15px;
+        opacity: 0.5;
+    }
+}
+
+
+
+
+@media (min-width:480px) and (max-width:998px){
+    /* Header */
+    header {
+        display: block;
+    }
+    header img{
+        width: 30%;
+        margin:10px auto;
+        display: block;
+    }
+    header nav{
+        width: 100%;
+        margin:0;
+    }
+    header nav ul {
+        margin:0;
+        padding: 0;
+    }
+    header nav ul li{
+        display: block;
+        width: 100%;
+        background:rgb(70, 17, 119);
+        text-align: center;
+        padding:20px 0;
+    }
+    header nav ul li:hover {
+        background:blueviolet;
+    }
+    header nav ul li a{
+        color:white;
+        font-size: 15px;
+    }
+
+    /*section 1*/
+    #section-1 {
+        background:none;
+        padding:20px;
+        color:rgb(70, 17, 119);
+    }
+    #section-1 img{
+        display: none;
+    }
+    #section-1 div h2{
+        font-size:30px;
+    }
+    #section-1 div p{
+        font-size:20px;
+    }
+    #section-1 div button{
+        font-size: 20px;
+        padding:10px 25px;
+    }
+    #section-1 div button:hover {
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    /* Section 2 */
+    #section-2 div h3{
+        font-size: 30px;
+    }
+    #section-2 div p{
+        font-size: 20px;
+    }
+
+    /* Section 3 */
+    #section-3 div h3{
+        font-size:30px;
+    }
+    #section-3 div p{
+        font-size: 20px;
+    }
+    #section-3 div button {
+        font-size: 20px;
+        padding:10px 25px;
+    }
+    #section-3 div button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    /* Footer */
+    footer div h4, p{
+        font-size:20px;
+    }
+}
